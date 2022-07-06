@@ -3,10 +3,10 @@ from django.http import HttpResponse
 
 # Create your views here.
 def list(request):
-    return HttpResponse('List page')
+    return render(request, 'list.html')
 
 def add(request):
-    return HttpResponse('Add page')
+    return render(request, 'add.html')
 
 def edit(request):
-    return HttpResponse('Edit page') 
+    return render(request, 'edit.html') 
