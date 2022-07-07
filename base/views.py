@@ -14,10 +14,10 @@ team_members = [
 
 def list(request):
     context = {'team_members': team_members}
-    return render(request, 'list.html', context)
+    return render(request, 'base/list.html', context)
 
 def add(request):
-    return render(request, 'add.html')
+    return render(request, 'base/add.html')
 
-def edit(request):
-    return render(request, 'edit.html') 
+def edit(request, id):
+    return render(request, 'base/edit.html') 

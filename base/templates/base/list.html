@@ -4,11 +4,13 @@
 
     <div>
         {% for member in team_members %}
+        <a href="/edit/{{member.id}}"> 
             <div>
                 <h5>{{member.name}}</h5>
                 <h5>{{member.number}}</h5>
                 <h5>{{member.email}}</h5>
             </div>
+        </a>
 
         {% endfor %}
     </div>
