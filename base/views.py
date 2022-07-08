@@ -20,4 +20,9 @@ def add(request):
     return render(request, 'base/add.html')
 
 def edit(request, id):
-    return render(request, 'base/edit.html') 
+    member = None
+    for i in team_members:
+        if i['id'] == int(id):
+            member = i
+    context = {'member': member}
+    return render(request, 'base/edit.html', context)  
