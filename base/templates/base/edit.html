@@ -6,6 +6,7 @@
 <div>
     <h5>{{member.name}}</h5>
     <form method="POST" action="" >
+        {% csrf_token %}
 
         <input type="Submit" value="Save"/>
     </form>

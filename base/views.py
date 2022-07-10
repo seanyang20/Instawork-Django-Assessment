@@ -20,6 +20,8 @@ def list(request):
 
 def add(request):
     form = MemberForm()
+    if request.method == 'POST':
+        print(request.POST)
     context = {'form': form}
     return render(request, 'base/add.html', context)
 
