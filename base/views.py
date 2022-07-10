@@ -21,8 +21,8 @@ def add(request):
 
 def edit(request, id):
     member = None
-    for i in team_members:
-        if i['id'] == int(id):
-            member = i
+    for person in team_members:
+        if person['id'] == int(id):
+            member = person
     context = {'member': member}
     return render(request, 'base/edit.html', context)  
