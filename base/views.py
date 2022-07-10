@@ -17,7 +17,8 @@ def list(request):
     return render(request, 'base/list.html', context)
 
 def add(request):
-    return render(request, 'base/add.html')
+    context = {}
+    return render(request, 'base/add.html', context)
 
 def edit(request, id):
     member = None
@@ -26,3 +27,4 @@ def edit(request, id):
             member = person
     context = {'member': member}
     return render(request, 'base/edit.html', context)  
+
