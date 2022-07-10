@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Member
+from .forms import MemberForm
 
 # Create your views here.
 
@@ -17,7 +19,8 @@ def list(request):
     return render(request, 'base/list.html', context)
 
 def add(request):
-    context = {}
+    form = MemberForm()
+    context = {'form': form}
     return render(request, 'base/add.html', context)
 
 def edit(request, id):

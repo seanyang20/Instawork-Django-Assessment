@@ -14,3 +14,4 @@ class Member(models.Model):
     phone = PhoneNumberField(null=False, blank=False, unique=True)
     email = models.EmailField(max_length = 254)
     role = MultiSelectField(choices=ROLE_CHOICE)
+
