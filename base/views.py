@@ -46,6 +46,13 @@ def edit(request, id):
             return redirect('list')
 
 
-    context = {'form': form}
+    context = {'form': form, 'member': member}
     return render(request, 'base/edit.html', context)  
 
+def delete(request, id):
+    member = Member.objects.get(id=id)
+    # if request.method == 'POST':
+       # print(request.POST)
+    member.delete()
+    return redirect('list')
+    # return render(request, 'base/delete.html', {'form': member})
