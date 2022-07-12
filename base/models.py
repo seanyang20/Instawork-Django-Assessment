@@ -14,4 +14,8 @@ class Member(models.Model):
     phone = PhoneNumberField(null=False, blank=False, unique=True)
     email = models.EmailField(max_length = 254)
     role = MultiSelectField(choices=ROLE_CHOICE)
+    updated = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return (self.first_name + self.last_name)
