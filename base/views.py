@@ -36,6 +36,16 @@ def edit(request, id):
     #     if person['id'] == int(id):
     #         member = person
     member = Member.objects.get(id=id)
-    context = {'member': member}
+    form = MemberForm(instance=member)
+
+    if request.method == 'POST':
+       # print(request.POST)
+       form = MemberForm(request.POST, instance=member)
+       if form.is_valid():
+            form.save()
+            return redirect('list')
+
+
+    context = {'form': form}
     return render(request, 'base/edit.html', context)  
 
