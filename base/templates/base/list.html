@@ -10,8 +10,8 @@
         <!-- <a href="/edit/{{member.id}}">  -->
         <a href="{% url 'edit' member.id %}"> 
             <div>
-                <h5>{{member.name}}</h5>
-                <h5>{{member.number}}</h5>
+                <h5>{{member.first_name}} {{member.last_name}} </h5>
+                <h5>{{member.phone}}</h5>
                 <h5>{{member.email}}</h5>
             </div>
         </a>  
