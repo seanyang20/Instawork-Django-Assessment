@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Member
 from .forms import MemberForm
+import logging
+
 
 # Create your views here.
 
@@ -13,9 +15,9 @@ from .forms import MemberForm
 # ] 
 
 
-
 def list(request):
-    team_members = Member.objects.all()
+    team_members = Member.objects.values()
+
     context = {'team_members': team_members}
     return render(request, 'base/list.html', context)
 

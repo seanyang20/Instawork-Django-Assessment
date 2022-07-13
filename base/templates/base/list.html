@@ -8,9 +8,11 @@
     <div>
         {% for member in team_members %}
         <!-- <a href="/edit/{{member.id}}">  -->
+        {{ member.role }}
         <a href="{% url 'edit' member.id %}"> 
             <div>
-                <h5>{{member.first_name}} {{member.last_name}} </h5>
+                <h5>{{member.role}}</h5>
+                <h5>{{member.first_name}} {{member.last_name}} {% if '2' in member.role %}(Admin){% endif %}</h5>
                 <h5>{{member.phone}}</h5>
                 <h5>{{member.email}}</h5>
             </div>
