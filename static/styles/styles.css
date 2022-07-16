@@ -1,0 +1,43 @@
+*::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+* {
+      padding: 0;
+      margin: 0;
+}
+html {
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: white;
+}
+.title {
+    color: blue;
+}
+.list-container {
+    /* color: lightcyan; */
+    background-color: lightgray;
+}
+.plus-sign {
+    text-align: right;
+    font-size: 3rem;
+    margin-right: 1.5rem;
+}
+.plus-sign__icon {
+    color: blue;
+    text-decoration: none;
+}
+.list-container__title {
+    font-size: 2rem;
+    margin: 1rem;
+}
+.list-container__counter {
+    color: grey;
+    margin: 1rem;
+    font-size: 1rem;
+}
