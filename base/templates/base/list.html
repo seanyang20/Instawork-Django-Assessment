@@ -10,7 +10,7 @@
     <h3 class="list-container__title">Team members</h3>
     {% for member in team_members %}
         {% if forloop.last %}
-            <h5 class="list-container__counter">You have {{forloop.counter}} team members</h5>
+            <h5 class="list-container__subtitle">You have {{forloop.counter}} team members</h5>
         {% endif %}
     {% endfor %}
     <div class="list-container__members">

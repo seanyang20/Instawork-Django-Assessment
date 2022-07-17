@@ -17,7 +17,7 @@ body{
     background-color: lightgrey;
 }
 .title {
-    color: blue;
+    color: black;
 }
 .list-container {
     /* color: lightcyan; */
@@ -37,13 +37,18 @@ body{
     font-size: 2.5rem;
     margin: 1rem;
 }
-.list-container__counter {
+.list-container__subtitle {
     color: grey;
     margin: 1rem 1rem 0 1rem;
     font-size: 1.5rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid grey;
 }
+
+
+/* List Page */
+
+
 .list-container__members {
     padding: 0 1rem 2rem 1rem;
 }
@@ -110,4 +115,32 @@ body{
     height: 40%;
     margin: 0 0 0 -20%;
     border-radius: 50%;
+}
+
+/* Add Page & Edit Page*/
+
+.list-container__info {
+    padding: 1.5rem 0 1rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+.list-container__form {
+    padding: 0 1rem 2rem 1rem;
+}
+label[for="id_first_name"] {
+    display: none;
+}
+label[for="id_last_name"] {
+    display: none;
+}
+label[for="id_email"] {
+    display: none;
+}
+label[for="id_phone"] {
+    display: none;
+}
+/* Removing Role Label */
+p:nth-child(7) {
+    display: none;
 }
