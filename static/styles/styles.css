@@ -23,7 +23,7 @@ body{
     /* color: lightcyan; */
     background-color: white;
     margin-left: .5rem;
-    width: 480px;
+    /* width: 480px; */
 }
 .plus-sign {
     text-align: right;
@@ -122,7 +122,7 @@ body{
 
 .list-container__info {
     padding: 1.5rem 0 1rem 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: black;
 }
@@ -143,28 +143,67 @@ label[for="id_phone"] {
 }
 /* inputs */
 input[type="text"] {
-    height: 1.5rem;
+    height: 2.5rem;
     width: 100%;
+    text-indent: 1rem;
 }
 input[type="email"] {
-    height: 1.5rem;
+    height: 2.5rem;
     width: 100%;
+    text-indent: 1rem;
 }
 input[type="tel"] {
-    height: 1.5rem;
+    height: 2.5rem;
     width: 100%;
+    text-indent: 1rem;
 }
 input[name="last_name"] {
     margin-top: 1rem;
+    text-indent: 1rem;
 }
 input[name="email"] {
     margin: 1rem 0 1rem 0;
+    text-indent: 1rem;
 }
+/* Role Formatting */
+label[for="id_role_0"] {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding: 1rem 0 1rem 0;
+    color: grey;
+}
+label[for="id_role_0"]:focus-within {
+   color: black;
+}
+input[type="radio"] {
+    width: 1.75rem;
+}
+label[for="id_role_0"]:has(input[type="radio"]:checked) {
+    color: black;
+}
+#text:nth-child(2) {
+    font-size: 1rem;
+}
+label[for="id_role_1"] {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding: 1rem 0 1rem 0;
+    color: grey;
+}
+label[for="id_role_1"]:focus-within {
+    color: black;
+}
+
 /* Editing Role Label */
 p:nth-child(7) {
     padding: 1rem 0 1rem 0;
     font-weight: bold;
     hanging-punctuation: none;
+    font-size: 1.5rem;
 }
 .save-button-container {
     text-align: right;
@@ -191,3 +230,4 @@ p:nth-child(7) {
     justify-content: space-between;
     margin-top: 2rem;
 }
+
