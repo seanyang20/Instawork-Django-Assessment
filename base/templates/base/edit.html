@@ -3,10 +3,12 @@
 {% block content %}
 <h1>Edit Page</h1>
 
-<div>
-    <h5>{{member.first_name}}</h5>
-    <form method="POST" action="" >
+<div class="list-container">
+    <h3 class="list-container__title">Edit team member</h3>
+    <h5 class="list-container__subtitle">Edit contact info, location and role.</h5>
+    <form method="POST" action="" class="list-container__form" >
         {% csrf_token %}
+        <h5 class="list-container__info">Info</h5>
         {{form.as_p}}
         <a href="{% url 'delete' member.id %}">Delete</a>
         
