@@ -2,6 +2,7 @@ from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from phonenumber_field.widgets import PhoneNumberPrefixWidget
 from multiselectfield import MultiSelectField
+from django.forms.widgets import RadioSelect
 
 
 
@@ -16,7 +17,8 @@ class Member(models.Model):
     last_name = models.CharField(max_length=50)
     email = models.EmailField(max_length = 254)
     phone = PhoneNumberField(null=False, blank=False, unique=True, region='US')
-    role = MultiSelectField(choices=ROLE_CHOICE)
+    # role = MultiSelectField(choices=ROLE_CHOICE)
+    role = models.CharField(max_length=2, choices=ROLE_CHOICE, default=ROLE_CHOICE[0])
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
 
