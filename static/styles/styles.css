@@ -23,6 +23,7 @@ body{
     /* color: lightcyan; */
     background-color: white;
     margin-left: .5rem;
+    width: 480px;
 }
 .plus-sign {
     text-align: right;
@@ -140,7 +141,28 @@ label[for="id_email"] {
 label[for="id_phone"] {
     display: none;
 }
-/* Removing Role Label */
+/* inputs */
+input[type="text"] {
+    height: 1.5rem;
+    width: 100%;
+}
+input[type="email"] {
+    height: 1.5rem;
+    width: 100%;
+}
+input[type="tel"] {
+    height: 1.5rem;
+    width: 100%;
+}
+input[name="last_name"] {
+    margin-top: 1rem;
+}
+input[name="email"] {
+    margin: 1rem 0 1rem 0;
+}
+/* Editing Role Label */
 p:nth-child(7) {
-    display: none;
+    padding: 1rem 0 1rem 0;
+    font-weight: bold;
+    hanging-punctuation: none;
 }
