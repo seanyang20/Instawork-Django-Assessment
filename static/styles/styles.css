@@ -166,3 +166,28 @@ p:nth-child(7) {
     font-weight: bold;
     hanging-punctuation: none;
 }
+.save-button-container {
+    text-align: right;
+    margin-top: 2rem;
+}
+.save-button {
+    color: white;
+    background-color: #0066ff;
+    border: 1px solid #0066ff;
+    border-radius: 5%;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    cursor: pointer;
+}
+.delete-button {
+    color: red;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5%;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    cursor: pointer;
+}
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}

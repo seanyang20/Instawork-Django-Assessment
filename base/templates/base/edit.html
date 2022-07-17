@@ -10,9 +10,10 @@
         {% csrf_token %}
         <h5 class="list-container__info">Info</h5>
         {{form.as_p}}
-        <a href="{% url 'delete' member.id %}">Delete</a>
-        
-        <input type="Submit" value="Save"/>
+        <div class="buttons-container">
+            <button href="{% url 'delete' member.id %}" class="delete-button">Delete</button>
+            <input type="Submit" value="Save" class="save-button"/>
+        </div>
     </form>
 </div>
 

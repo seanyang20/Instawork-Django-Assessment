@@ -10,7 +10,9 @@
         {% csrf_token %}
         <h5 class="list-container__info">Info</h5>
         {{form.as_p}}
-        <input type="Submit" value="Save"/>
+        <div class="save-button-container">
+            <input type="Submit" value="Save" class="save-button"/>
+        </div>
     </form>
 </div>
  
