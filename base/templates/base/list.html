@@ -13,17 +13,20 @@
             <h5 class="list-container__counter">You have {{forloop.counter}} team members</h5>
         {% endif %}
     {% endfor %}
-    <div>
+    <div class="list-container__members">
         {% for member in team_members %}
         <!-- <a href="/edit/{{member.id}}">  -->
-        <a href="{% url 'edit' member.id %}"> 
-            <div>
-                <h5>{{member.role}}</h5>
-                <h5>{{member.first_name}} {{member.last_name}} {% if '2' in member.role %}(Admin){% endif %}</h5>
-                <h5>{{member.phone}}</h5>
-                <h5>{{member.email}}</h5>
-            </div>
-        </a>  
+        <div>    
+            <a href="{% url 'edit' member.id %}" class="list-container__member-link"> 
+                <div class="avatar avatar--default default"></div>
+                <div class="list-container__member">
+                    <!-- <h5 class="list-container__info-r">{{member.role}}</h5> -->
+                    <h5 class="list-container__name">{{member.first_name}} {{member.last_name}} {% if '2' in member.role %}(Admin){% endif %}</h5>
+                    <h5 class="list-container__phone">{{member.phone}}</h5>
+                    <h5 class="list-container__email">{{member.email}}</h5>
+                </div>
+            </a>  
+        </div>    
         {% endfor %}
     </div>
 </div>

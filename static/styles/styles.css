@@ -14,14 +14,15 @@ html {
 
 
 body{
-    background-color: white;
+    background-color: lightgrey;
 }
 .title {
     color: blue;
 }
 .list-container {
     /* color: lightcyan; */
-    background-color: lightgray;
+    background-color: white;
+    margin-left: .5rem;
 }
 .plus-sign {
     text-align: right;
@@ -33,11 +34,80 @@ body{
     text-decoration: none;
 }
 .list-container__title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 1rem;
 }
 .list-container__counter {
     color: grey;
-    margin: 1rem;
+    margin: 1rem 1rem 0 1rem;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid grey;
+}
+.list-container__members {
+    padding: 0 1rem 2rem 1rem;
+}
+.list-container__member {
+    padding: 1rem 0 1rem 0;
+}
+.list-container__member-link {
+    text-decoration: none;
+    color: grey;
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.list-container__name {
+    padding-top: 0.5rem;
     font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+.list-container__phone {
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 1rem;
+}
+.list-container__email {
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+}
+/* avatar */
+.avatar--default {
+    position: relative;
+    overflow: hidden;
+    width: 4rem;
+    height: 4rem;
+    margin: 1.5rem 1rem 1rem 0;
+}
+.default {
+    background-color: grey;
+	border-radius: 50%;
+}
+.default::before {
+    background-color: lightgrey;
+}
+.default::after {
+    background-color: lightgrey;
+	box-shadow: 0 0 0 4px grey;
+}
+.avatar--default::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 70%;
+    height: 44%;
+    margin: 0 0 0 -35%;
+    border-radius: 100% 100% 0 0;
+}
+.avatar--default::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 19%;
+    width: 40%;
+    height: 40%;
+    margin: 0 0 0 -20%;
+    border-radius: 50%;
 }
