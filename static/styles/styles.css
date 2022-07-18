@@ -11,13 +11,8 @@ html {
     padding: 0;
     margin: 0;
 }
-
-
 body{
     background-color: lightgrey;
-}
-.title {
-    color: black;
 }
 .list-container {
     /* color: lightcyan; */
@@ -180,6 +175,10 @@ label[for="id_role_0"]:focus-within {
 input[type="radio"] {
     width: 1.75rem;
 }
+input[type="radio"]:checked::placeholder {
+    width: 1.75rem;
+    color: black;
+}
 label[for="id_role_0"]:has(input[type="radio"]:checked) {
     color: black;
 }
@@ -223,6 +222,7 @@ p:nth-child(7) {
     border: 1px solid grey;
     border-radius: 5%;
     padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    text-decoration: none;
     cursor: pointer;
 }
 .buttons-container {

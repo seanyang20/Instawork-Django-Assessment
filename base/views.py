@@ -39,6 +39,7 @@ def edit(request, id):
     #         member = person
     member = Member.objects.get(id=id)
     form = MemberForm(instance=member)
+    print('inside edit')
 
     if request.method == 'POST':
        # print(request.POST)

@@ -1,8 +1,6 @@
 {% extends 'main.html' %}
 
 {% block content %}
-<h1>Edit Page</h1>
-
 <div class="list-container">
     <h3 class="list-container__title">Edit team member</h3>
     <h5 class="list-container__subtitle">Edit contact info, location and role.</h5>
@@ -11,7 +9,7 @@
         <h5 class="list-container__info">Info</h5>
         {{form.as_p}}
         <div class="buttons-container">
-            <button href="{% url 'delete' member.id %}" class="delete-button">Delete</button>
+            <a href="{% url 'delete' member.id %}" class="delete-button" role="button">Delete</a>
             <input type="Submit" value="Save" class="save-button"/>
         </div>
     </form>

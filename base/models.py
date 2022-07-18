@@ -9,8 +9,8 @@ from django.forms.widgets import RadioSelect
 # Create your models here.
 # Might not need this 
 
-ROLE_CHOICE = ((1, "Regular - Can't delete members"),
-               (2, 'Admin - Can delete members'))
+ROLE_CHOICE = (("1", "Regular - Can't delete members"),
+               ("2", "Admin - Can delete members"))
 
 class Member(models.Model):
     first_name = models.CharField(max_length=50)
@@ -18,7 +18,7 @@ class Member(models.Model):
     email = models.EmailField(max_length = 254)
     phone = PhoneNumberField(null=False, blank=False, unique=True, region='US')
     # role = MultiSelectField(choices=ROLE_CHOICE)
-    role = models.CharField(max_length=2, choices=ROLE_CHOICE, default=ROLE_CHOICE[0])
+    role = models.CharField(max_length=10, choices=ROLE_CHOICE, default=1)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
 
