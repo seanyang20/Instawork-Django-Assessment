@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles', 
     'base.apps.BaseConfig',
     'django_db_logger',
-    'django_sass',
     'phonenumber_field',
 ]
 
