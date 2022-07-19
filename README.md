@@ -10,19 +10,11 @@ A simple team-member management application that allow the user to view, edit, a
 
  
 
-<<<<<<< HEAD
 <div align="center">
   <img src="images/list.png" width="200" >
   <img src="images/add.png" width="200" /> 
   <img src="images/edit.png" width="200" />
 </div>
-=======
-<p float="left" align="middle">
-  <img src="images/list_view.png" width="200" >
-  <img src="images/add_view.png" width="200" /> 
-  <img src="images/edit_view.png" width="200" />
-</p>
->>>>>>> 9ecbc16b15912b31a77c7968265c8a2625c0a0f6
 
   
 
@@ -33,10 +25,6 @@ Estimated time spent: ~14 hours
 ## Requirements  
 
  
-<<<<<<< HEAD
-=======
-
->>>>>>> 9ecbc16b15912b31a77c7968265c8a2625c0a0f6
 Python3 
 
 https://www.python.org/downloads/ 
@@ -46,10 +34,6 @@ Pip3
 https://www.geeksforgeeks.org/how-to-install-pip-in-macos/ 
 
  
-<<<<<<< HEAD
-=======
-
->>>>>>> 9ecbc16b15912b31a77c7968265c8a2625c0a0f6
  
 
 ## Setup 
@@ -124,11 +108,7 @@ Click on the port link to run the application
 
 ### Home Page 
 
-<<<<<<< HEAD
 <img src="images/list.png" width="200" >
-=======
-<img src="images/list_view.png" width="200" >
->>>>>>> 9ecbc16b15912b31a77c7968265c8a2625c0a0f6
 
 
 On the home page, click on the plus sign at the top right to direct you to the Add Page.  
@@ -138,11 +118,7 @@ Click on any of the listed members to be directed to its edit page.
 
 ### Add Page  
 
-<<<<<<< HEAD
  <img src="images/add.png" width="170" /> 
-=======
- <img src="images/add_view.png" width="170" /> 
->>>>>>> 9ecbc16b15912b31a77c7968265c8a2625c0a0f6
 
 
 Clicking save before filling out the form completely should throw a message 'Please fill out this field' for the fields that are blank. 
@@ -190,8 +166,4 @@ Go back to an Edit page. Clicking Delete will redirect you back to the home page
 
  
 
-<<<<<<< HEAD
  
-=======
- 
->>>>>>> 9ecbc16b15912b31a77c7968265c8a2625c0a0f6
