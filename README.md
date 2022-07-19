@@ -10,47 +10,11 @@ A simple team-member management application that allow the user to view, edit, a
 
  
 
-Team members 
-You have 4 team members 
-Adrien Olczak (Admin) 
-(415) 310-1618 
-adrien@instawork.com 
-Charlene Pham 
-(415) 310-1619 
-charlene@instawork.com 
-Benson Mach 
-(415) 310-1621 
-benson@instawork.com 
-Dan Petrie 
-(415) 310-1620 
-dan@instawork.com 
-
-Add a team member 
-Set email, location and role. 
-Info 
-First Name 
-Last Name 
-Email 
-Phone Number 
-Role: 
-Regular - Can't delete members 
-Admin - Can delete members 
-O 
-Save 
-Edit team member 
-Edit contact info, location and role. 
-Info 
-Charlene 
-Pham 
-Charlene@instawork.com 
-(415) 310-1619 
-Role: 
-Regular - Can't delete members 
-Admin - Can delete members 
-Delete 
-O 
-Save 
- 
+<p float="left" align="middle">
+  <img src="images/list_view.png" width="200" >
+  <img src="images/add_view.png" width="200" /> 
+  <img src="images/edit_view.png" width="200" />
+</p>
 
   
 
@@ -146,52 +110,24 @@ Click on the port link to run the application
 
 ### Home Page 
 
- 
+<img src="images/list_view.png" width="200" >
 
-
- 
-
- 
 
 On the home page, click on the plus sign at the top right to direct you to the Add Page.  
 
- 
 
 Click on any of the listed members to be directed to its edit page. 
 
- 
-
 ### Add Page  
 
- 
+ <img src="images/add_view.png" width="170" /> 
 
-Add a team member 
-Set email, location and role. 
-Info 
-First Name 
-Last Name 
-Email 
-Phone Number 
-Role: 
-Regular - Can't delete members 
-Admin - Can delete members 
-O 
-Save 
- 
 
 Clicking save before filling out the form completely should throw a message 'Please fill out this field' for the fields that are blank. 
 
- 
-
 Fill the form completely with invalid formatting for email and phone number. Clicking save should result in the following messages. 
 
- 
-
-• Enter a valid email address. 
-test 
-• Enter a valid phone number (e.g. (201) 555-0123) or a number with 
-an international call refix. 
-3123 
+<img src="images/error.png" width="200" >
  
 
 Re-enter the fields with a valid email and phone number and click save. This should redirect you back to the home page.  
@@ -208,30 +144,13 @@ Go back to the Add page and fill in the form with valid information. This time, 
 
 ### Edit Page  
 
- 
-
-Edit team member 
-Edit contact info, location and role. 
-Info 
-Charlene 
-Pham 
-Charlene@instawork.com 
-(415) 310-1619 
-Role: 
-Regular - Can't delete members 
-Admin - Can delete members 
-Delete 
-O 
-Save 
- 
+<img src="images/edit.png" width="200" >
 
 Similar to the Add page, clicking Save with empty fields will result in error messages that prevent the edit from taking place. 
 
- 
 
 Fill in the form with valid information. Select Admin under 'Role' and click Save. On the bottom of the home page, you should see the edited member with an '(Admin)' attached to the right of the member's name. 
 
- 
 
 Go back to an Edit page. Clicking Delete will redirect you back to the home page and you should no longer see the deleted team member in the list.  
 
